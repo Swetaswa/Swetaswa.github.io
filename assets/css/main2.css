@@ -4,9 +4,9 @@ html, body, div, h1, h2, h3, p {
   padding: 0;
 }
 
-/* Apply a deep purple background color to the body */
+/* Apply a soothing purple background color to the body */
 body {
-  background-color: #2d1a41;
+  background-color: #8b5fbf; /* Soothing purple background */
   color: #ffffff;
   font-family: Arial, sans-serif;
 }
@@ -26,14 +26,14 @@ body {
 
 /* Style the menu */
 #menu {
-  background-color: rgba(45, 26, 65, 0.8);
+  background-color: rgba(139, 95, 191, 0.8); /* Slightly transparent purple background */
   padding: 20px;
   border-radius: 15px;
   margin-top: 20px;
 }
 
 .search input[type="text"] {
-  background-color: #42294a;
+  background-color: #6a3a85; /* Darker purple input field */
   border: none;
   border-radius: 5px;
   color: #ffffff;
@@ -49,7 +49,7 @@ body {
 /* Style the main content */
 #main {
   padding: 20px;
-  background-color: rgba(45, 26, 65, 0.8);
+  background-color: rgba(139, 95, 191, 0.8); /* Slightly transparent purple background */
   border-radius: 15px;
   margin-top: 20px;
 }
@@ -76,7 +76,7 @@ body {
 
 /* Style the footer */
 #footer {
-  background-color: #42294a;
+  background-color: #6a3a85; /* Darker purple footer background */
   padding: 20px;
   text-align: center;
   border-radius: 15px;
