@@ -8,8 +8,11 @@ html, body, div, h1, h2, h3, p {
 body {
   background-color: #f4e3ff; /* Pastel lavender background */
   color: #3a3a3a; /* Dark gray text color */
-  font-family: 'Georgia', serif; /* Serif font for a traditional feel */
+  font-family: 'Noto Serif JP', serif; /* Japanese serif font */
 }
+
+/* Load Google Font 'Noto Serif JP' for the Japanese vibe */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap');
 
 /* Style the header with a subtle Japanese vibe */
 #header {
@@ -51,7 +54,9 @@ body {
 /* Style the main content with subtle patterns */
 #main {
   padding: 20px;
-  background-image: url('background-pattern.jpg'); /* Replace with your pattern image */
+  /* Replace the URL with your background image */
+  background-image: url('your-background-image.jpg');
+  background-repeat: repeat; /* Repeats the background pattern */
   border-radius: 15px;
   margin-top: 20px;
 }
