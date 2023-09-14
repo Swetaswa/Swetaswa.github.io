@@ -1,4 +1,17 @@
-/* Header styles */
+/* Reset some default styles */
+html, body, div, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply a deep purple background color to the body */
+body {
+  background-color: #2d1a41;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+/* Style the header */
 #header {
   background-color: transparent;
   border-bottom: none;
@@ -11,16 +24,16 @@
   text-decoration: none;
 }
 
-/* Menu styles */
+/* Style the menu */
 #menu {
-  background-color: rgba(45, 26, 65, 0.8); /* Semi-transparent purple background */
+  background-color: rgba(45, 26, 65, 0.8);
   padding: 20px;
   border-radius: 15px;
   margin-top: 20px;
 }
 
 .search input[type="text"] {
-  background-color: #42294a; /* Darker purple input field */
+  background-color: #42294a;
   border: none;
   border-radius: 5px;
   color: #ffffff;
@@ -33,10 +46,10 @@
   color: #ffffff;
 }
 
-/* Main content styles */
+/* Style the main content */
 #main {
   padding: 20px;
-  background-color: rgba(45, 26, 65, 0.8); /* Semi-transparent purple background */
+  background-color: rgba(45, 26, 65, 0.8);
   border-radius: 15px;
   margin-top: 20px;
 }
@@ -54,16 +67,16 @@
   font-size: 20px;
 }
 
-/* Content paragraph styles */
+/* Style content paragraphs */
 .post p {
   text-align: justify;
   font-size: 18px;
   line-height: 1.6;
 }
 
-/* Footer styles */
+/* Style the footer */
 #footer {
-  background-color: #42294a; /* Darker purple footer background */
+  background-color: #42294a;
   padding: 20px;
   text-align: center;
   border-radius: 15px;
