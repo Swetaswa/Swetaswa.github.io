@@ -1,311 +1,396 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
   <head>
-    <title>Hi! Swetaswa Here</title>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
-    />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript
-      ><link rel="stylesheet" href="assets/css/noscript.css"
-    /></noscript>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
   </head>
-  <body class="is-preload">
-    <!-- Wrapper -->
-    <div id="wrapper" class="fade-in">
-      <!-- Intro -->
-      <div id="intro">
-        <h1>
-          Swetaswa Basak<br />
-          Here
-        </h1>
-        <p>
-          Welcome to my personal portfolio! 
-        </p>
-        <ul class="actions">
-          <li>
-            <a
-              href="#header"
-              class="button icon solid solo fa-arrow-down scrolly"
-              >Continue</a
-            >
-          </li>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">SwetaswA</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
-
-      <!-- Header -->
-      <header id="header">
-        <a href="index.html" class="logo">Swetaswa</a>
-      </header>
-
-      <!-- Nav -->
-      <nav id="nav">
-        <ul class="links">
-          <li class="active"><a href="index.html">Unveiling my essence</a></li>
-		  <li><a href="single1.html">Chronicle of My Journey..</a></li>
-        </ul>
-        <ul class="icons">
-            <a href="https://www.linkedin.com/in/swetaswa-basak-90a94b178/" class="icon brands fa-linkedin"
-              ><span class="label">linkedin</span></a
-            >
-          </li>
-          <li>
-            <a href="https://github.com/Swetaswa" class="icon brands fa-github"
-              ><span class="label">GitHub</span></a
-            >
-          </li>
-		  <li>
-            <a
-              href="mailto: swetaswa.developer@gmail.com"
-              class="icon solid fa-envelope"
-              ><span class="label">Email</span></a
-            >
-          </li>
-        </ul>
-      </nav>
-
-      <!-- Main -->
-      <div id="main">
-        <!-- Featured Post -->
-        <article class="post featured">
-          <header class="major">
-            <h2>
-              I warmly welcome the opportunity<br>to meet you!
-            </h2>
-            <p>
-🌟 Greetings Recruiters! I am a dynamic Software Engineer currently embarking on a transformative journey as an intern with Nokia Solutions and Networks. My mission? To revolutionize the tech sphere with a potent blend of advanced skills, unwavering ambition, and a passion for collective growth. <br>
-
-🚀 Tech Fusion Maven: My prowess extends across a constellation of cutting-edge technologies including Kubernetes, Helm, SNMP, NETCONF, and more. These aren't just buzzwords for me – they're tools I wield expertly to create solutions that resonate on a global scale. <br>
-
-🎓 Learning Alchemist: Pursuing an M.Tech in Software Engineering from the esteemed VIT, I'm sculpting a future where innovation reigns supreme. My mastery over Java propels me to sculpt elegant, high-performance code that navigates the complexities of the digital age. <br>
-
-🎙️ Engagement Virtuoso: With the power of oratory and communication, I forge connections between the technical and the tangible. Whether conversing with tech aficionados or those new to the field, I bridge the gap, ensuring mutual understanding. <br>
-
-👥 Empowering Team Catalyst: Leadership is in my DNA. A believer in collective ascension, I nurture teams to greatness, promoting dialogue, fostering camaraderie, and championing collaborative victories. <br>
-
-🌐 Holistic Visionary: My perspective on software engineering is panoramic. Beyond code, I envision the entire ecosystem – its potential, its role, its future. This perspective allows me to engineer solutions that evolve with the world around them.<br>
-
-🔄 SDLC Virtuoso: The Software Development Life Cycle is my canvas, and I paint success stories. My knack for managing projects encompasses timely delivery, scope precision, and a constant drive for quality enhancement.<br>
-
-🔧 System Whisperer: System engineering is my playground. Armed with a strategic mindset and technical acumen, I design and optimize software architectures that thrive in complex terrains.<br>
-
-🌱 Eternal Scholar: In my world, learning is a lifelong adventure. Challenges are invitations to soar higher. My journey, both academic and experiential, speaks volumes about my commitment to staying ahead.<br>
-
-Ready to weave my unique thread into the tapestry of your visionary company, I invite you to explore the realms of innovation, leadership, and relentless progression. Let's craft the future together – one revolutionized tech landscape at a time.
-            </p>
-          </header>
-          <img src="images/personal1_new.png" alt=""
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Swetaswa Basak</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img
+          src="./assets/myself-photoaidcom-cropped.jpg"
+          alt="Swetaswa Basak profile picture"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Swetaswa Basak</h1>
+        <p class="section__text__p2">Software Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Swetaswa_Basak_resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/swetaswa-basak-90a94b178/'"
           />
-        </article>
-
-        <!-- Posts -->
-        <section class="posts">
-          <article>
-            <header>
-              <h2>
-                Education
-              </h2>
-            </header>
-            <img src="images/education.jpg" alt=""
-            />
-            <p>
-				Vellore Institute of Technology, Chennai<br>
-				M.Tech(Int.) in Software Engineering<br>
-				2019 - Ongoing<br>
-				CGPA: 9.10 / 10.0<br><br>
-				SALT LAKE SCHOOL(CA)<br>
-				Kolkata, India<br>
-				CISCE| Class X (2017)<br>
-				95.8%<br>
-				CISCE| Class XII (2019)<br>
-				90.75%
-            </p>
-          </article>
-          <article>
-            <header>
-              <h2>
-                <a href="#"
-                  >Skills</a
-                >
-              </h2>
-            </header>
-            <img src="images/skills.png" alt=""
-            />
-            <p>
-				PROGRAMMING<br>
-				Proficient:
-				Java<br>
-				Intermediate:
-				C++ • Python • Javascript •
-				R • HTML • CSS • PHP • SQL • K8s • Helm • Docker<br>
-				Familiar:
-				Dart • Ruby • SNMP • Elastic Stack • Redis • MariaDB • Selenium <br><br>
-				OTHERS<br>
-				Full professional Proficiency in English , Hindi and Bengali<br>
-		    		Other Languages: Japanese, Spanish<br>
-		    		Critical Thinking and problem solving<br>
-				Data Analytic<br>
-		    		Android and web development<br>Cloud Computing<br>
-		    		Project Management<br>Time management<br>Leadership
-            </p>
-          </article>
-          <article>
-            <header>
-              <h2>
-                Participation
-              </h2>
-            </header>
-            
-            <p>
-				HACKTOBERFEST - DIGITAL OCEAN | Contributor
-				2022| remote<br>
-				• Improvised user interfaces and documentation<br>
-				• Extensively contributed in Open Source projects<br>
-		    		<a href="https://drive.google.com/file/d/1lH7guNczEzp8xDB8Y40UZY-mlqdITLLn/view?usp=sharing">Flipkart Grid 4.0 | 2022</a><br>
-		    		<a href="https://drive.google.com/file/d/1eQ_5Gi-9qeUOKCCv_E7A3a6bZpfYHVgI/view?usp=sharing">Optum Stratethon: E-track | 2022</a><br>
-		    		Accenture Innovation Challenge | 2022<br>
-		    		<a href="https://drive.google.com/file/d/1TnGdv3gXz2dFekDHnkAFjNq-xi32fw2D/view?usp=sharing">Hero Campus Challenge Season 8 | 2023</a><br>
-		    		<a href="https://drive.google.com/file/d/1GuihBv8s1P3JE3s_594Cy5Dr2sc9_bTR/view?usp=sharing">Webinar : Fallacies of Quality | 2022</a>
-            </p>
-          </article>
-	  <article>
-		<header>
-			<h2>
-				Experience
-			</h2>
-		  </header>
-		  <p>
-			  <a href="https://drive.google.com/file/d/1o37SWOgB3gFyHqagEeENdcAAefEmhGKF/view?usp=sharing">Accenture Developer Intern</a><br>
-			  Skills: Unit Testing · Identity & Access Management (IAM) · Python (Programming Language)
-		  </p>
-		  <p>
-			  Research and Development intern @ Nokia Solutions and Networks<br>
-			  Skills: K8s, Helm, Altiplano, Elastic Stack, MAriaDB, Kafka, Netconfig, YANG, GIT, Kibana, Grafna, Selenium, Robot Fwk
-		  </p>
-	</article>
-	  <article>
-            <header>
-              <h2>
-                Achievement
-              </h2>
-            </header>
-            
-            <p>
-		    <a href="https://drive.google.com/file/d/1wZ_IYupOgaO1zkpd6IKGBfSMvwJiVIX1/view?usp=sharing">Meritorious Award</a><br>
-		    100 Marks in Computer Science in X and XII
-            </p>
-          </article>
-          <article>
-            <header>
-              <h2>
-                <a href="single.html"
-                  >Projects</a
-                >
-              </h2>
-            </header>
-            <img src="images/Project.jpg" alt=""
-            />
-            <p>
-              I have done multiple projects and have included details of the same.
-            </p>
-            <ul class="actions special">
-              <li><a href="single.html" class="button">Details</a></li>
-            </ul>
-          </article>
-          <article>
-            <header>
-              <h2>
-                Certifications
-              </h2>
-            </header>
-            <img src="images/certificate.jpg" alt=""
-            />
-            <p>
-		    		<a href="https://drive.google.com/file/d/1CJGNZOFSPKQe1VbaMuQO3w4OIvtvHqka/view?usp=sharing">2023 Docker Essential Training</a><br> 
-				<a href="https://drive.google.com/file/d/1qPQpxYrIWi_RXAZcuUW_xXvT-QNSBP2f/view?usp=sharing">2023 Learning Java 11</a><br>
-		    		<a href="https://www.credly.com/badges/6afcb162-4ba8-43de-bc84-f33ac6b78c1f/linked_in_profile">2022 Microsoft Azure Fundamentals</a><br>
-				<a href="https://www.credly.com/badges/65af1fd3-7697-4662-bc6e-940f46c2e695/linked_in_profile">2022 Microsoft AI Fundamentals</a><br>
-				<a href="https://www.coursera.org/account/accomplishments/certificate/ZL3NGGSDQAY4">2021 Coursera Operating Systems and You</a><br>
-				<a href="https://www.credly.com/badges/d0eac085-8b3b-455c-b9a5-64990ab46cfe?source=linked_in_profile">2021 Cisco Introduction to packet tracer</a><br>
-				<a href="https://www.udemy.com/certificate/UC-6f9a38d9-0760-45c1-87f6-461b3053bd6b/">2021 Udemy Javascript</a><br>
-				<a href="https://www.udemy.com/certificate/UC-5163e0f8-80ca-4127-a777-c8eadce68c5e/">2020 Udemy Flutter and Dart</a> <br>
-				<a href="https://www.udemy.com/certificate/UC-67502b90-dd73-4fae-b4e0-86564a6c02c6/">2022 Udemy Unreal Engine Game Developer</a>
-				
-            </p>
-          </article>
-          <article>
-            <header>
-              <h2>
-                Position of responsibility
-              </h2>
-            </header>
-            <img src="images/team.jpg" alt=""
-            />
-            <p>
-				• Marketing Coordinator for VSplash club, Technovit 2022<br>
-            </p>
-          </article>
-        </section>
-
-        <!-- Footer -->
-        <footer>
-          
-        </footer>
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Swetaswa'"
+          />
+        </div>
       </div>
-
-      <!-- Footer -->
-      <footer id="footer">
-        
-        <section class="split contact">
-          <section class="alt">
-            <h3>Address</h3>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/me2-photoaidcom-cropped.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>
+                10 months <br />Student Intern in Nokia <br />Worked on
+                Altiplano <br />Tech stack: bash, perl, python, hbase, redis,
+                selenium, Robot Fwk
+              </p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>
+                Salt Lake School(CA) <br />CISCE X: 95.8% XII: 90.72%
+                <br />M.Tech in Software Engineering from Vellore Institute of
+                Technology with 9.2 CGPA
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
             <p>
-              100, Purba Sinthee Lane(A)<br />
-              Dum Dum, Kolkata - 700030<br>West Bengal, India
+              Innovative Software Engineer currently driving transformative
+              solutions as an intern at Nokia Solutions and Networks. Proficient
+              in cutting-edge technologies such as Kubernetes, Helm, SNMP, and
+              NETCONF, I combine technical prowess with a strategic mindset. An
+              M.Tech in Software Engineering graduate from VIT and backed by a
+              solid foundation in Java, I craft elegant code that navigates
+              complexities. As a persuasive communicator and team leader, I
+              bridge gaps and empower collective growth. My holistic approach to
+              software engineering, coupled with a strong grasp of SDLC and
+              system engineering, fuels my commitment to crafting impactful
+              solutions. A perpetual learner, I'm ready to contribute
+              effectively and shape the future of technology. 🌟 I am a team
+              player, a risk taker, and an avid reader, and I love to discover
+              the enthralling beauties of the world hidden beneath the dismal
+              heap of power play.
             </p>
-          </section>
-          <section>
-            <h3>Phone</h3>
-            <p><a href="tel:+919674340365">(+91) 9674340365</a></p>
-          </section>
-          <section>
-            <h3>Email</h3>
-            <p><a href="mailto: swetaswa.developer@gmail.com">swetaswa.developer@gmail.com</a></p>
-          </section>
-          <section>
-            <h3>Social</h3>
-            <ul class="icons alt">
-              <li>
-                <a href="https://www.linkedin.com/in/swetaswa-basak-90a94b178/" class="icon brands fa-linkedin"
-              ><span class="label">linkedin</span></a>
-              </li>
-              <li>
-                <a href="https://github.com/Swetaswa" class="icon brands fa-github"
-              ><span class="label">GitHub</span></a>
-              </li>
-            </ul>
-          </section>
-        </section>
-      </footer>
-
-      <!-- Copyright -->
-      <div id="copyright">
-        <ul>
-          <li>&copy; SwetaswaBasak</li>
-        </ul>
+          </div>
+        </div>
       </div>
-    </div>
-
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Software Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JAVA</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C++</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>BASH</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Selenium</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Software Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Software Design</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/brain.webp"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Brain Tumor Detection
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Swetaswa/Brain-tumor-detection'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/ai car.jpg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              AI car simulation
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Swetaswa/AI-car-simulation-using-NEAT-algorithm'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/paytm_1-sixteen_nine.webp"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Ticket Checker</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Swetaswa/Online-Ticket-Checker'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:examplemail@gmail.com"
+              >swetaswa.developer@gmail.com</a
+            >
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://www.linkedin.com/in/swetaswa-basak-90a94b178/"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Swetaswa Basak. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
   </body>
 </html>
